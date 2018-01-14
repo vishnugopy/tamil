@@ -1,0 +1,89 @@
+html{
+  text-align: center;
+  background: linear-gradient(to right,#3281ff,lightblue,#3281ff);
+
+}
+
+div {
+    position:absolute;
+    -webkit-animation: myfirst 50s 1; /* Safari 4.0 - 8.0 */
+    -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+    animation: myfirst 50s 1;
+    animation-direction: alternate;
+    left:0;
+    right:0;
+}
+
+h3{
+font-family: 'Arima Madurai', cursive;
+font-size:4vh;
+color: #f20707;
+text-shadow:
+    3px 3px 0 #fff,
+  -1px -1px 0 #fff,
+   1px -1px 0 #fff,
+   -1px 1px 0 #fff,
+    1px 1px 0 #fff;
+}
+
+
+h1{
+font-family: 'Sedgwick Ave Display', cursive;
+font-size:7vh;
+color:#2075fc;
+text-shadow:
+    3px 3px 0 #fff,
+  -1px -1px 0 #fff,
+   1px -1px 0 #fff,
+   -1px 1px 0 #fff,
+    1px 1px 0 #fff;
+}
+
+
+h2{
+font-family: 'Hind Madurai', sans-serif;
+font-size:5vh;
+color:black;
+text-shadow:
+    3px 3px 0 #fff,
+  -1px -1px 0 #fff,
+   1px -1px 0 #fff,
+   -1px 1px 0 #fff,
+    1px 1px 0 #fff;
+}
+
+
+a{
+  text-decoration: none;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  color:white;
+  text-shadow:
+      3px 3px 0 #000,
+    -1px -1px 0 #000,
+     1px -1px 0 #000,
+     -1px 1px 0 #000,
+      1px 1px 0 #000;
+
+
+}
+
+.cen{
+  height:100%;
+  width:250px;
+}
+
+@-webkit-keyframes myfirst {
+    0%   {top: 10px; }
+    25%  {top: 100px;}
+    50%  {top: 200px;}
+    75%  {top: 300px;}
+    100% {top:700px;}
+}
+
+@keyframes myfirst {
+    0%   {top: 10px; }
+    25%  {top: 100px;}
+    50%  {top: 200px;}
+    75%  {top: 300px;}
+    100% {top:700px;}
+}

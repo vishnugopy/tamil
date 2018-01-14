@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title> Wishes From Your Friend</title>
+    <link rel="stylesheet" href="CSS\stylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Hind+Madurai" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arima+Madurai" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display" rel="stylesheet">
+    <link rel="shortcut icon" href="PHOTO\2018.png" />
+  </head>
+  <body>
+      <div>
+          <img  src="PHOTO\001.gif" alt="01">
+      
+      </div>
+      <h3>வணக்கம்,</h3>
+      <h2>இனிய தமிழ்புத்தாண்டு 
+          <br>நல்வாழ்த்துக்கள்</h2>
+      <h1 id="demo"></h1>
+      <img class="cen" src="PHOTO\0111.png" alt="01">
+
+
+
+<footer>
+  <a href="https://www.instagram.com/__vishnu__10/">&copy;Vishnugopy</a>
+
+</footer>
+      <script>
+          var txt;
+          var person = prompt("உங்களுடைய பெயரை எழுதவும்..:");
+          if (person == null || person == "") {
+              txt = "நண்பா";
+          } else {
+              txt = person;
+          }
+          document.getElementById("demo").innerHTML = txt;
+      </script>
+  </body>
+</html>

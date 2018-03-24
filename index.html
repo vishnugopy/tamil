@@ -8,34 +8,73 @@
     <link href="https://fonts.googleapis.com/css?family=Hind+Madurai" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Arima+Madurai" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="shortcut icon" href="PHOTO\2018.png" />
   </head>
   <body>
       <div>
-          <img  src="PHOTO\001.gif" alt="01">
+          <img class="fly" src="PHOTO\001.gif" alt="01">
       
       </div>
       <h3>வணக்கம்,</h3>
-      <h2>இனிய தமிழ்புத்தாண்டு 
-          <br>நல்வாழ்த்துக்கள்</h2>
-      <h1 id="demo"></h1>
+      <h2>இனிய தமிழ் புத்தாண்டு 
+          <br>நல் வாழ்த்துக்கள்</h2>
+      <div class="greeting"><h1></h1></div>
       <img class="cen" src="PHOTO\0111.png" alt="01">
+      
+      
+      
+      
+      <section class="pop-up">
+<div class="box">
+  <form class="form">
+    <h4>உங்களுடைய பெயரை எழுதவும்..</h4>
+			<div><input type="text" placeholder="Name" required/></div>
+			<div><button class="close" type="submit">Let's Go! <i class="fas arrow-right"></i></button></div>
+		</form>
+</div>
+  </section>
 
 
 
 <footer>
-  <a href="https://www.instagram.com/__vishnu__10/">&copy;Vishnugopy</a>
+  <a href="https://www.instagram.com/__vishnu__10/">&copy;Vishnugopy2018</a>
 
 </footer>
       <script>
-          var txt;
-          var person = prompt("உங்களுடைய பெயரை எழுதவும்..:");
-          if (person == null || person == "") {
-              txt = "நண்பா";
-          } else {
-              txt = person;
-          }
-          document.getElementById("demo").innerHTML = txt;
+//          var txt;
+//          var person = prompt("உங்களுடைய பெயரை எழுதவும்..:");
+//          if (person == null || person == "") {
+//              txt = "நண்பா";
+//          } else {
+//              txt = person;
+//          }
+//          document.getElementById("demo").innerHTML = txt;
+          
+          
+$(document).ready(function(){
+	
+	$(".close").click(function(){
+    $(".pop-up").hide();
+    $(".fly").hide();
+ 
+});
+	
+	$("button").click(function() {
+	
+		var nameValue = $("input[type=text]").val().trim(),
+				nameField = $("input[type=text]");
+		
+		if(nameValue) {
+			$(this).remove();
+			nameField.prop("disabled", true);
+			$("h1").append(nameValue);
+			$(".greeting").show(300);
+            $(".fly").show(300);
+            
+		}
+	});
+});
       </script>
   </body>
 </html>
